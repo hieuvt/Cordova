@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="lib/jquery.mobile/jquery.mobile.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="lib/jquery.js"></script>
+        <script type="text/javascript" src="lib/jquery.mobile/jquery.mobile.js"></script>
+        <title>jQuery Book Browser</title>
+    </head>
+    <div data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>Selected jQuery Books</h1>
+        </div>
+
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#drupal-7">Drupal 7 Development by Example</a></li>
+                <li><a href="#jq-game">jQuery Game Development Essentials</a></li>
+                <li><a href="#jqmobile-cookbook">jQuery Mobile Cookbook</a></li>
+                <li><a href="#jquery-designers">jQuery for Designers</a></li>
+                <li><a href="#jquery-hotshot">jQuery Hotshot</a></li>
+                <li><a href="#jqui-cookbook">jQuery UI Cookbook</a></li>
+                <li><a href="#mobile-apps">Creating Mobile Apps with jQuery Mobile</a></li>
+                <li><a href="wp-mobile-apps.html">WordPress Mobile Applications with PhoneGap</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="jq-game" data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>jQuery Game Development Essentials</h1>
+        </div>
+        <div data-role="content">
+            <img src="img/jq-game.jpg" alt="jQuery Game Development Essentials" />
+            <div class="title">jQuery Game Development Essentials</div>
+            <div class="author">Salim Arsever</div>
+        </div>
+    </div>
+
+    <div id="jqmobile-cookbook" data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>jQuery Mobile Cookbook</h1>
+        </div>
+        <div data-role="content">
+            <img src="img/jqmobile-cookbook.jpg" alt="jQuery Mobile Cookbook" />
+            <div class="title">jQuery Mobile Cookbook</div>
+            <div class="author">Chetan K Jain</div>
+        </div>
+    </div>
+
+    <div id="jquery-designers" data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>jQuery for Designers</h1>
+        </div>
+        <div data-role="content">
+            <img src="img/jquery-designers.jpg" alt="jQuery for Designers" />
+            <div class="title">jQuery for Designers</div>
+            <div class="author">Natalie MacLees</div>
+        </div>
+    </div>
+
+    <div id="jquery-hotshot" data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>jQuery Reference Guide</h1>
+        </div>
+        <div data-role="content">
+            <img src="img/jquery-hotshot.jpg" alt="jQuery Hotshot" />
+            <div class="title">jQuery Hotshot</div>
+            <div class="author">Dan Wellman</div>
+        </div>
+    </div>
+
+    <div id="jqui-cookbook" data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>jQuery UI Cookbook</h1>
+        </div>
+        <div data-role="content">
+            <img src="img/jqui-cookbook.jpg" alt="jQuery UI Cookbook" />
+            <div class="title">jQuery UI Cookbook</div>
+            <div class="author">Adam Boduch</div>
+        </div>
+    </div>
+
+    <div id="mobile-apps" data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>Creating Mobile Apps with jQuery Mobile</h1>
+        </div>
+        <div data-role="content">
+            <img src="img/mobile-apps.jpg" alt="Creating Mobile Apps with jQuery Mobile" />
+            <div class="title">Creating Mobile Apps with jQuery Mobile</div>
+            <div class="author">Shane Gliser</div>
+        </div>
+    </div>
+
+    <div id="drupal-7" data-role="page" data-add-back-btn="true">
+        <div data-role="header">
+            <h1>Drupal 7 Development by Example</h1>
+        </div>
+        <div data-role="content" class="book">
+            <img src="img/drupal-7.jpg" alt="Drupal 7 Development by Example" />
+            <div class="title">Drupal 7 Development by Example</div>
+            <div class="author">Kurt Madel</div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
